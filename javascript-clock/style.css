@@ -1,0 +1,24 @@
+*{
+    background: #32383E;
+    color: #F88E13;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+}
+.clock {
+    position: relative;
+    font-size: 60px;
+}
+.text1 {
+    position: relative;
+    font-size: 50px;
+}
+.text2 {
+    position: relative;
+    font-size: 40px;
+    margin: auto 100px;
+}
+img {
+    margin-top: 120px;
+    width: 17%;
+}
