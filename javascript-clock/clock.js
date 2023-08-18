@@ -1,8 +1,8 @@
 const userName = prompt('Isminizi giriniz:')
-const showUser = document.querySelector('#myName').innerHTML = `${userName}`;
+const showUser = document.querySelector('#myName').innerHTML = userName;
 
 
-function showTime() {
+/* function showTime() {
     let myclock = document.querySelector('#myClock');
     //date object is created..
     let currentTime =  new Date();
@@ -25,3 +25,17 @@ function showTime() {
 
     setTimeout(showTime, 1000);
 }
+*/
+
+
+//The code which is comment format shown above has been written again to not placed those lines like above. It is shortened.  
+function localdate() {
+    const DatneNow = new Date();
+    const currentTime = DatneNow.toLocaleTimeString("tr");
+    const dayOfWeek = ["Pazar", "Pazartesi", "Sali", "Carsamba", "Persembe", "Cuma", "Cumartesi"];
+    const days = dayOfWeek[DatneNow.getDay()];
+    document.getElementById("myClock").textContent = `${currentTime} ${days}`;
+}
+localdate();
+
+setInterval(localdate, 1000)
